@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgba(140, 196, 97, 1);
+    font-family: "Roboto", sans-serif;
+}
+img {
+    margin-top: 150px;
+    margin-left: 50%;
+    translate: -50%;
+    /* position: fixed; */
+}
+.stars {
+    margin-top: -300px;
+    animation: blink 2s infinite linear;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.para1 {
+    margin-top: 50px;
+    color: white;
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+}
+.para2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.replay {
+    background: white;
+    color: rgba(107, 107, 107, 1);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    width: 180px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 50%;
+    translate: -50%;
+}
+
+/* ----------: Rules Box :---------- */
+.rulesBox {
+    background-color: rgba(0, 68, 41, 1);
+    color: white;
+    border: 7px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 270px;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.rulesBox.active {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    /* background: transparent; */
+}
+.rulesLists {
+    list-style-type: none;
+}
+.rulesLists li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+.rulesLists li::before {
+    content: "";
+    background-color: yellow;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    border-radius: 2px;
+}
+.cancleBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 1);
+    color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    cursor: pointer;
+}
+
+.showRulesBtn {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}

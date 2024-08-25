@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgba(140, 196, 97, 1);
+    font-family: "Roboto", sans-serif;
+}
+.scoreBox {
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 60px;
+    padding: 1% 2%;
+    border: 2px solid white;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftBox {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+.rightBox {
+    display: flex;
+    gap: 30px;
+}
+.comp, .user {
+    height: 120px;
+    width: 130px;
+    background: white;
+    color: rgba(101, 101, 101, 1);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.score {
+    margin-top: 10px;
+}
+p {
+    font-size: 60px;
+    color: black;
+}
+
+
+/* ----------: Result Box :---------- */
+.result {
+    width: 46%;
+    margin-left: 27%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftContent, .middleContent, .rightContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.middleContent {
+    height: 50%;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 150px;
+}
+.middleContent p {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+.replay {
+    background: white;
+    color: rgba(107, 107, 107, 1);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    width: 180px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.box1, .box2 {
+    height: 140px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 16px solid rgba(0, 116, 182, 1);
+    border-radius: 50%;
+    background: white;
+    border: 16px solid rgba(189, 0, 255, 1);
+    box-shadow: -1px 1px 11px 0px rgba(0, 0, 0, 0.35);
+}
+.box1 {
+    border: 16px solid rgba(255, 169, 67, 1);
+}
+.ellipse1 {
+    background: rgba(59, 103, 32, .5);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    z-index: -1;
+}
+.ellipse2 {
+    background: rgba(29, 168, 43, 0.79);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 425px;
+    z-index: -20;
+}
+.ellipse3 {
+    background: rgba(46, 154, 37, 0.39);
+    box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    z-index: -50;
+}
+
+
+/* ----------: Rules Box :---------- */
+.rulesBox {
+    background-color: rgba(0, 68, 41, 1);
+    color: white;
+    border: 7px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 270px;
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    /* background: transparent; */
+}
+.rulesLists {
+    list-style-type: none;
+}
+.rulesLists li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+.rulesLists li::before {
+    content: "";
+    background-color: yellow;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    border-radius: 2px;
+}
+.cancleBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    background: rgba(255, 0, 0, 1);
+    color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    cursor: pointer;
+}
+
+.showRulesBtn {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.rulesBox.active {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
