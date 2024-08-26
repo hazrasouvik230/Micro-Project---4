@@ -15,17 +15,17 @@ img {
 }
 .stars {
     margin-top: -300px;
-    animation: blink 2s infinite linear;
+    animation: blink 0.5s infinite linear;
 }
 @keyframes blink {
     0% {
         opacity: 1;
     }
-    50% {
+    /* 50% {
         opacity: 0;
-    }
+    } */
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
