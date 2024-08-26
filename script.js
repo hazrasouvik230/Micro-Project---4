@@ -90,7 +90,7 @@ document.querySelector(".cancleBtn").addEventListener("click", () => {
 
 // Redirect the page to the Play Page:
 document.querySelector(".replay").addEventListener("click", () => {
-    window.location.href = "play.html";
+    window.location.href = "index.html";
 });
 
 // Redirect the page to the Hurray Page:
