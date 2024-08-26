@@ -172,7 +172,7 @@ h2 {
 }
 .rulesLists li::before {
     content: "";
-    background-color: yellow; /* Yellow color for the square bullet */
+    background-color: yellow;
     width: 12px;
     height: 12px;
     display: inline-block;
